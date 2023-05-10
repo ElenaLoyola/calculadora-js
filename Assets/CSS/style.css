@@ -1,0 +1,98 @@
+.container {
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    height: 450px;
+    background-color: #e2e0e0;
+}
+.pantalla {
+    background-color: #252525;
+}
+#resultado {
+    color: white;
+    font-size: 30px;
+    background-color: #252525;
+    width: 96%;
+    height: 70px;
+    text-align: end;
+    border: 0px;
+    padding: 0px;
+    margin-right: 10px;
+
+}
+button {
+    height: 50px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;   
+}
+button:active {
+    box-shadow: 0 3px #bebebe;
+    transform: translateY(3px);
+}
+.operaciones {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+.operaciones button {
+    background-color: #5cc0df;
+    border: 0px;
+    color: white;
+    width: 20%;
+}
+.main {
+    display: flex;
+    flex: 100%;
+    padding: 5%;
+    padding-top: 0px;
+}
+.numeros {
+    flex: 80%;
+}
+.numeros div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.numeros div button {
+    background-color: #efefef;
+    border: 0px;
+    width: 28%;
+}
+#ac {
+    background-color: #d8534f;
+    color: white;
+}
+.signo-igual {
+    flex: 30%;
+    display: flex;
+    justify-content: center;
+}
+#igual {
+    width: 70%;
+    margin-left: 25%;
+    border: 0px;
+    height: 260px;
+}
+/* Dispositivos extra pequeños (teléfonos, 600px y menos) */ 
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 60%;
+    }
+}
+/* Dispositivos pequeños (tablets verticales y teléfonos grandes, 600px y más) */ 
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .container {
+        width: 40%;
+    }
+} 
+/* Dispositivos medianos (tablets horizontales, 768px y más) */ 
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .container {
+        width: 30%;
+    }
+}
